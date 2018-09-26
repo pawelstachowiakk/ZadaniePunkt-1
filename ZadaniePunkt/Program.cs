@@ -17,6 +17,16 @@ namespace ZadaniePunkt
             string y1;
             int y2;
 
+            Punkt punkt1 = new Punkt(1, 1);
+            Punkt punkt2 = new Punkt(2, 2);
+
+            Punkt punkt3 = 2 * punkt1;
+
+
+            punkt1.Wyswietl();
+            punkt2.Wyswietl();
+            punkt3.Wyswietl();
+            Console.ReadLine();
 
             Punkt XY = new Punkt(5,5); // 2) Współrzędne punktu są ustalane na etapie tworzenia obiektu (konstruktor)
 
