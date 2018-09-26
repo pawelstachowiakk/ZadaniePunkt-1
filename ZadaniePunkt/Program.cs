@@ -19,6 +19,13 @@ namespace ZadaniePunkt
 
             Console.WriteLine("Pawel");
 
+            for (int i = 0; i < 99; i++)
+            {
+                Punkt punkt = new Punkt();
+            }
+
+            Console.WriteLine("Liczba obietów: {0}", Punkt.Licznik);
+
             Punkt punkt1 = new Punkt(1, 1);
             Punkt punkt2 = new Punkt(2, 2);
 

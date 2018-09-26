@@ -9,18 +9,23 @@ namespace ZadaniePunkt
     class Punkt
     {
 
+        public static int Licznik { get; private set; }
+
         public int X { get; private set; }// właściwość 1
         
 
         public int Y { get; private set; }// właściwość 2
-       
 
 
-        public Punkt(int wspx, int wspy) //konstruktor
+        public Punkt()
+        {
+            Licznik++;
+        }
+
+        public Punkt(int wspx, int wspy) : this() //konstruktor
         {
             X = wspx;
             Y = wspy;
-
         }
 
         public void Prawo(int ileP) //metoda 1
@@ -53,6 +58,19 @@ namespace ZadaniePunkt
 
             Console.WriteLine("Współrzędna X: {0}",X);
             Console.WriteLine("Współrzędna Y: {0}",Y);
+
+            
+        }
+
+        const int Z = 0;
+        public static void Method()
+        {
+            
+        }
+
+        public static void Method(int i)
+        {
+
         }
 
         public static Punkt operator +(Punkt p1, Punkt p2)
