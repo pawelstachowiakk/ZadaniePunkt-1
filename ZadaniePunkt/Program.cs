@@ -17,6 +17,8 @@ namespace ZadaniePunkt
             string y1;
             int y2;
 
+            Console.WriteLine("Pawel");
+
             Punkt punkt1 = new Punkt(1, 1);
             Punkt punkt2 = new Punkt(2, 2);
 
